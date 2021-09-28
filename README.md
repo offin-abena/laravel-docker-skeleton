@@ -53,7 +53,6 @@ To ssh into other containers, replace the `app` with other container name as `my
    docker-compose down
 
 ```
-
 ## Environment Variables
 ### PHP
 Feel free to change the php docker image at `./docker/app/Dockerfile` file 
@@ -61,7 +60,7 @@ Feel free to change the php docker image at `./docker/app/Dockerfile` file
 MySQL username, password can be changed from `docker-compose.yml` file under the  `environment` section of `mysql`. Change the value and build the mysql image again with `docker-compose build mysql`.
 ```
   environment:
-    MYSQL_DATABASE: app
+    MYSQL_DATABASE: dev
     MYSQL_ROOT_PASSWORD: root
     MYSQL_USER: admin
     MYSQL_PASSWORD: secret
