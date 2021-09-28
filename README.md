@@ -23,25 +23,35 @@ Run this to build your docker containers for each services (*app [php],web [ngin
 
   ```
  ### To Build and Run the services at background
-  ```docker-compose build && docker-compose up -d
+  ```
+     docker-compose build && docker-compose up -d
+
   ```
 ### SSH into your laravel application directory console
 To **Start**, cd ./src _generate app key_ and _run migrations_, you need to ssh to your app container service. To ssh to your app container, run this.
 
-```docker-compose exec app sh
+```
+    docker-compose exec app sh
+
 ```
 This will take you to `/var/www/html` path inside your `app` service container. Now you can run your `composer install` and other Laravel or PHP specific commands there.
 
 To ssh into other containers, replace the `app` with other container name as `mysql` e.g.
-```docker-compose exec mysql sh
+```
+   docker-compose exec mysql sh
+
 ```
 
 ### Stop running containers
-```docker-compose stop
+```
+   docker-compose stop
+
 ```
 
 ### Pull down the  running containers
-```docker-compose down
+```
+   docker-compose down
+
 ```
 
 ## Environment Variables
@@ -65,10 +75,12 @@ This this implementation of docker uses `docker volume` and store some the docke
 - `./cache/redis` contain redis database file
 - `./nginx` contain nginx webserver configurations
 ### Connecting MySQL with local desktop client.
-```host: 0.0.0.0
+```
+   host: 0.0.0.0
    username: user
    password: secret
    port: 4306
+   
 ```
 ## Why Use Laravel Docker Skeleton
 To be honest there are alot of docker skeletons for laravel out there? But I chose to create a new alternative based on the following:
