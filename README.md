@@ -6,7 +6,7 @@ Docker Compose based **Laravel development environment** with individual **App**
 
 ## Installation
 ### Install Laravel
-Clone the repo at your development machine. Go to your *Laravel Docker* directory. Then Run this
+Clone the repo at your development machine. Go to your *Laravel-Docker-Skeleton* directory. Then Run this
 ```
 A current version of laravel 8 is found in the ./src folder kindly feel free to make the required changes and develop your project
 
