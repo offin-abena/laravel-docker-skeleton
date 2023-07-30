@@ -15,7 +15,7 @@ services:
     networks:
      - app-net
   web:
-   image: nginx:stable-alpine
+   image: nginx:stable-alpine3.17
    container_name: web
    restart: unless-stopped
    tty: true
